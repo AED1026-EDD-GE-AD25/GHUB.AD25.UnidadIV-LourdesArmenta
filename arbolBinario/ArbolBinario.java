@@ -1,5 +1,6 @@
 package arbolBinario;
 
+
 public class ArbolBinario {
     //Atributos
     //Raiz del arbol
@@ -22,12 +23,20 @@ public class ArbolBinario {
         System.out.print(aux.getValor()+" ");
     }
     //recorrido recursivo
+
+    public void preorden(){
+        preorden(raiz);
+    }
     private void preorden(Nodo aux){
         if (aux != null){
             visitar(aux);
             preorden(aux.getIzquierdo());
             preorden(aux.getDerecho());
         }
+    }
+
+    public void inorden(){
+        inorden(raiz);
     }
     private void inorden(Nodo aux){
         if(aux != null){
@@ -36,11 +45,28 @@ public class ArbolBinario {
             inorden(aux.getDerecho());
         }
     }
+
+    public void postorden(){
+        postorden(raiz);
+    }
     private void postorden(Nodo aux){
         if(aux != null){
             postorden(aux.getIzquierdo());
             postorden(aux.getDerecho());
             visitar(aux);
+        }
+    }
+    /*
+     * Recorrido por nivel
+     * 
+     */
+    public void recorridoPorNiveles(){
+        cola.Cola<Nodo> cola = new cola.Cola<>();
+        cola.encolar(raiz);
+        while (!cola.esVacia()){
+            Nodo aux = cola.frente();
+            visitar(aux);
+            ///pendiente de terminar
         }
     }
 

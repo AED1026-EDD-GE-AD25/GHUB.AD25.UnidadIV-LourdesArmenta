@@ -9,11 +9,14 @@ public class Nodo{
         izquierdo = null;
         derecho = null;
     }
-    public Nodo(Object valor, Nodo izquierdo, Nodo derecho) {
+    
+    public Nodo(Object valor) {
         this.valor = valor;
-        this.izquierdo = izquierdo;
-        this.derecho = derecho;
+        this.izquierdo = null;
+        this.derecho = null;
     }
+
+   
     public Object getValor() {
         return valor;
     }
