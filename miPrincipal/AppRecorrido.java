@@ -2,7 +2,7 @@ package miPrincipal;
 import arbolBinario.*;
 
 
-public class AppRecorridoRecursivo {
+public class AppRecorrido {
     public static void inicio() {
         //crear el arbol binario de la Figura del material
         //hacemos los recorridos
@@ -32,6 +32,13 @@ public class AppRecorridoRecursivo {
         System.out.println();
         System.out.println("PostOrden:");
         ab.postorden();
+        System.out.println();
+        System.out.println("Recorrido por Niveles:");
+        ab.recorridoPorNiveles();
+        System.out.println();
+        System.out.println("Recorrido Preorden Iterativo:");
+        ab.preordenIterativo();
+        System.out.println();
 
 
 

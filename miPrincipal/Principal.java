@@ -12,7 +12,7 @@ public class Principal {
                 opc = sc.nextInt();
                 switch (opc) {
                     case 1:
-                        AppRecorridoRecursivo.inicio();
+                        AppRecorrido.inicio();
                         break;
                     case 0:
                         System.out.println("Hasta Luego!");

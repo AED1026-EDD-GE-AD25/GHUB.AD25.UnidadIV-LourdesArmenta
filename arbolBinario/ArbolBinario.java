@@ -1,6 +1,5 @@
 package arbolBinario;
 
-
 public class ArbolBinario {
     //Atributos
     //Raiz del arbol
@@ -66,8 +65,39 @@ public class ArbolBinario {
         while (!cola.esVacia()){
             Nodo aux = cola.frente();
             visitar(aux);
-            ///pendiente de terminar
+            if (aux.getIzquierdo()!=null)
+                cola.encolar(aux.getIzquierdo());
+            if(aux.getDerecho()!=null){
+                cola.encolar(aux.getDerecho());
+            }
+            cola.desencolar();
+
+            
         }
+    }
+    /*
+     * Recorrido preorden iterativo, utilizando una pila
+     */
+    public void preordenIterativo(){
+        pila.Pila<Nodo> pila = new pila.Pila<Nodo>();
+        pila.apilar(raiz);
+        while (!pila.esVacia()){
+            Nodo aux = pila.cima();
+            visitar(aux);
+            pila.retirar();
+            if (aux.getDerecho()!=null){
+                pila.apilar(aux.getDerecho());
+            }
+            if(aux.getIzquierdo()!=null){
+                pila.apilar(aux.getIzquierdo());
+            }
+        } 
+    }
+    /*
+     * Recorrido inorden en version iterativa
+     */
+    public void inordenIterativo(){
+        
     }
 
 
