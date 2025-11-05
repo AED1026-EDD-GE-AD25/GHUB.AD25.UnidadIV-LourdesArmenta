@@ -39,6 +39,13 @@ public class AppRecorrido {
         System.out.println("Recorrido Preorden Iterativo:");
         ab.preordenIterativo();
         System.out.println();
+        System.out.println("Recorrido InOrden iterativo:");
+        ab.inordenIterativo();
+        System.out.println();
+        System.out.println("Recorrido PostOrden iterativo:");
+        ab.postordenIterativo();
+        System.out.println();
+
 
 
 

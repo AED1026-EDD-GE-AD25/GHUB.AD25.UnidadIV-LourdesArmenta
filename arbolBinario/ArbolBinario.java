@@ -96,12 +96,49 @@ public class ArbolBinario {
     /*
      * Recorrido inorden en version iterativa
      */
-    public void inordenIterativo(){
-        
+    public void inordenIterativo(){ //falta explicar en el pizarron
+        pila.Pila<Nodo> pila = new pila.Pila<>();
+        pila.apilar(raiz);
+        Nodo aux = raiz.getIzquierdo();
+        while (aux != null || !pila.esVacia()){
+            if(aux != null){
+                pila.apilar(aux);
+                aux = aux.getIzquierdo();
+            }else{
+                aux = pila.cima();
+                pila.retirar();
+                visitar(aux);
+                aux = aux.getDerecho();
+
+            }
+        }
     }
+    /*
+     * Recorrido iterativo postOrden
+     */
+    public void postordenIterativo(){
+        pila.Pila<Nodo> pila = new pila.Pila<>();
+        Nodo aux = raiz;
+        Nodo q = raiz;
+        while(aux != null){
+            //avanza por la izquerda y apila los nodo
+            while(aux.getIzquierdo() != null){
+                pila.apilar(aux);
+                aux = aux.getIzquierdo();
+            }
+            while (aux !=null && 
+                    (aux.getDerecho() == null || aux.getDerecho() == q)){
+                visitar(aux);
+                q = aux;
+                if(pila.esVacia())
+                    return;
+                
+                aux = pila.cima();
+                pila.retirar();
 
-
-    
-    
-    
+            }
+            pila.apilar(aux);
+            aux = aux.getDerecho();
+        }
+    }  
 }
