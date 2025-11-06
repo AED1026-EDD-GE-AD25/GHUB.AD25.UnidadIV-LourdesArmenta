@@ -96,7 +96,7 @@ public class ArbolBinario {
     /*
      * Recorrido inorden en version iterativa
      */
-    public void inordenIterativo(){ //falta explicar en el pizarron
+    public void inordenIterativo(){ 
         pila.Pila<Nodo> pila = new pila.Pila<>();
         pila.apilar(raiz);
         Nodo aux = raiz.getIzquierdo();

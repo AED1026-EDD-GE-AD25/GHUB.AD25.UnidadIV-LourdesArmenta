@@ -14,6 +14,11 @@ public class Principal {
                     case 1:
                         AppRecorrido.inicio();
                         break;
+                    case 2:
+                        AppEnteroComparar.inicio();
+                        break;
+                    case 3:
+                        AppPersonaComparar.inicio();
                     case 0:
                         System.out.println("Hasta Luego!");
                         break;
@@ -33,6 +38,8 @@ public class Principal {
         System.out.println();
         System.out.println("    Arboles Binarios   ");
         System.out.println("1. Recorrido de Arboles");
+        System.out.println("2. Comparador Enteros  ");
+        System.out.println("3. Comparar Personas   ");
         System.out.println();
         System.out.println("0. Salir");
         System.out.print("Seleccione la opción deseada:");
