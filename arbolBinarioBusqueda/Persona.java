@@ -33,7 +33,7 @@ public class Persona implements Comparable{
     @Override
     public boolean esIgual(Object q) {
         Persona obj = (Persona) q;
-        if (this.id == obj.getId())
+        if ( this.nombre.compareTo(obj.getNombre()) ==0)
            return true;
         else   
             return false; 
@@ -42,7 +42,7 @@ public class Persona implements Comparable{
     @Override
     public boolean esMayor(Object q) {
         Persona obj = (Persona) q;
-        if (this.id > obj.getId())
+        if ( this.nombre.compareTo(obj.getNombre()) >0)
            return true;
         else   
             return false; 
@@ -51,7 +51,7 @@ public class Persona implements Comparable{
     @Override
     public boolean esMenor(Object q) {
         Persona obj = (Persona) q;
-        if (this.id < obj.getId())
+        if ( this.nombre.compareTo(obj.getNombre()) <0)
            return true;
         else   
             return false; 
