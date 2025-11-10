@@ -1,7 +1,7 @@
 package arbolBinarioBusqueda;
 import java.lang.Comparable;
 
-public class Estudiante implements Comparable{
+public class Estudiante implements Comparable<Estudiante>{
     private int id;
     private String nombre;
     private double promedio;
@@ -35,17 +35,13 @@ public class Estudiante implements Comparable{
         return "Estudiante [id=" + id + ", nombre=" + nombre + ", promedio=" + promedio + "]";
     }
     @Override
-    public int compareTo(Object o) {
-        Estudiante est = (Estudiante)o;
-        if(nombre.equals(est.getNombre())){
-            return 0;
-        }else if (nombre.compareTo(est.getNombre())>0){
-            return 1;
-        }else{
-            return -1;
-        }
+    public int compareTo(Estudiante o) {
+        int dif = this.id-o.getId();
 
+        return dif>0?1:dif<0?-1:0;
     }
+    
+    
     
     
     
