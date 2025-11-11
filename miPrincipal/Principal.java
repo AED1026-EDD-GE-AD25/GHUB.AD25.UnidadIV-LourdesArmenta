@@ -19,8 +19,16 @@ public class Principal {
                         break;
                     case 3:
                         AppPersonaComparar.inicio();
+                        break;
                     case 4:
                         AppOrdenarEstudiantes.inicio();
+                        break;
+                    case 5:
+                        AppOrdenarEstudianteNombre.inicio();
+                        break;
+                    case 6:
+                        AppOrdenarEstudianteProm.inicio();
+                        break;
                     case 0:
                         System.out.println("Hasta Luego!");
                         break;
@@ -42,7 +50,9 @@ public class Principal {
         System.out.println("1. Recorrido de Arboles");
         System.out.println("2. Comparador Enteros  ");
         System.out.println("3. Comparar Personas por Nombre  ");
-        System.out.println("4. Ordenar Estudiantes");
+        System.out.println("4. Ordenar Estudiantes por Id");
+        System.out.println("5. Ordenar Estudiantes por Nombre");
+        System.out.println("6. Ordenar Estudiantes por Promedio");
         System.out.println();
         System.out.println("0. Salir");
         System.out.print("Seleccione la opción deseada:");

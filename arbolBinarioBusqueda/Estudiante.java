@@ -38,7 +38,7 @@ public class Estudiante implements Comparable<Estudiante>{
     public int compareTo(Estudiante o) {
         int dif = this.id-o.getId();
 
-        return dif>0?1:dif<0?-1:0;
+        return dif>0? 1 :dif<0? -1 :0;
     }
     
     
