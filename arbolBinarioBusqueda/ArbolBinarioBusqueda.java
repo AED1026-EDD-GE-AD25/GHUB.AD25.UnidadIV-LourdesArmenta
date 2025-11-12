@@ -2,9 +2,11 @@ package arbolBinarioBusqueda;
 import arbolBinario.ArbolBinario;
 
 public class ArbolBinarioBusqueda extends ArbolBinario{
+    private Nodo raiz;
 
     public ArbolBinarioBusqueda(){
-        super();
+        raiz = null;
+        //super();
     }
     /*
      * Inserra un nodo en el arbol binario
@@ -13,12 +15,15 @@ public class ArbolBinarioBusqueda extends ArbolBinario{
         Comparable dato = (Comparable) valor;
         Nodo nuevo = new Nodo();
         nuevo.setValor(dato);
-        if (raiz == null){
+        if (raiz == null)
             raiz = nuevo;
-        else {
-            ///aqui me quede
-        }
+        else
+            {
 
-        }
+            }
+            ///aqui me quede
+        
+
+        
     }
 }

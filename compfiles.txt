@@ -3,8 +3,10 @@
 ./arbolBinarioBusqueda/Persona.java
 ./arbolBinarioBusqueda/CriterioEstPromedio.java
 ./arbolBinarioBusqueda/Util.java
+./arbolBinarioBusqueda/Nodo.java
 ./arbolBinarioBusqueda/Criterio.java
 ./arbolBinarioBusqueda/OtroCriterio.java
+./arbolBinarioBusqueda/ArbolBinarioBusqueda.java
 ./arbolBinarioBusqueda/Entero.java
 ./arbolBinarioBusqueda/Estudiante.java
 ./arbolBinarioBusqueda/Comparable.java
