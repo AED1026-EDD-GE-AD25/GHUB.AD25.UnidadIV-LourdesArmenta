@@ -3,7 +3,7 @@ package arbolBinario;
 public class ArbolBinario {
     //Atributos
     //Raiz del arbol
-    private Nodo raiz;
+    protected Nodo raiz;
     //contructor
 
     public ArbolBinario() {
