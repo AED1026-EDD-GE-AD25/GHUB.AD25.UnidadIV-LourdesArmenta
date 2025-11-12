@@ -29,6 +29,9 @@ public class Principal {
                     case 6:
                         AppOrdenarEstudianteProm.inicio();
                         break;
+                    case 7:
+                        AppEstudianteCriterioIdComparator.inicio();
+                        break;
                     case 0:
                         System.out.println("Hasta Luego!");
                         break;
@@ -53,6 +56,7 @@ public class Principal {
         System.out.println("4. Ordenar Estudiantes por Id");
         System.out.println("5. Ordenar Estudiantes por Nombre");
         System.out.println("6. Ordenar Estudiantes por Promedio");
+        System.out.println("7. Ordenar Estudiates por ID interce Comparator ");
         System.out.println();
         System.out.println("0. Salir");
         System.out.print("Seleccione la opción deseada:");

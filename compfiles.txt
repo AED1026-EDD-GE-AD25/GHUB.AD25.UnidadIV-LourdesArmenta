@@ -4,6 +4,7 @@
 ./arbolBinarioBusqueda/CriterioEstPromedio.java
 ./arbolBinarioBusqueda/Util.java
 ./arbolBinarioBusqueda/Criterio.java
+./arbolBinarioBusqueda/OtroCriterio.java
 ./arbolBinarioBusqueda/Entero.java
 ./arbolBinarioBusqueda/Estudiante.java
 ./arbolBinarioBusqueda/Comparable.java
@@ -21,3 +22,4 @@
 ./miPrincipal/AppOrdenarEstudianteProm.java
 ./miPrincipal/AppOrdenarEstudianteNombre.java
 ./miPrincipal/AppRecorrido.java
+./miPrincipal/AppEstudianteCriterioIdComparator.java
