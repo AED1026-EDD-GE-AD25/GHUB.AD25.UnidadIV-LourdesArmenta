@@ -18,6 +18,7 @@
 ./arbolBinario/ArbolBinario.java
 ./pila/Pila.java
 ./pila/Nodo.java
+./miPrincipal/AppOperacionesABB.java
 ./miPrincipal/AppEnteroComparar.java
 ./miPrincipal/AppPersonaComparar.java
 ./miPrincipal/AppOrdenarEstudiantes.java
