@@ -2,12 +2,16 @@ package arbolBinarioBusqueda;
 import arbolBinario.ArbolBinario;
 
 public class ArbolBinarioBusqueda extends ArbolBinario{
-    private Nodo raiz;
+    protected Nodo raiz;
 
     public ArbolBinarioBusqueda(){
         raiz = null;
         //super();
     }
+   
+
+    
+    
     /*
      * Inserra un nodo en el arbol binario
      */
@@ -57,4 +61,6 @@ public class ArbolBinarioBusqueda extends ArbolBinario{
             return null;
         }
     }
+
+    
 }
