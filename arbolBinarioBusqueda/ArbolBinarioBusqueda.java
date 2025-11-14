@@ -193,6 +193,34 @@ public class ArbolBinarioBusqueda  {
         }
     }
 
+    /*
+     * Eliminar un nodo
+     */
+    public boolean eliminar(Object valor){
+        Comparable dato = (Comparable)valor;
+        Nodo antecesor = null;
+        Nodo aux = raiz;
+        while (aux != null){
+            if(dato.esIgual(aux.getValor()))
+               break;
+            antecesor = aux;
+            if(dato.esMenor(aux.getValor()))
+               aux = aux.getIzquierdo();
+            else 
+               aux = aux.getDerecho();
+        }
+        if(aux == null)
+            return false;
+        //si llega a este punto, el nodo a eliminar existe y es AUX, y su
+        // ANTECESOR ES antecesor;
+        //Examina cada caso
+        //1. Si tiene menos de dos hijos (1 o 0 hijos), reajustar 
+        //   los enlaces del antecesor
+        if(aux.getIzquierdo()==null)
+           if (aux.getValor().esMenor(antecesor.getValor())
+
+    }
+
 
 
     
