@@ -16,6 +16,12 @@
 ./miTest/AppTest.java
 ./arbolBinario/Nodo.java
 ./arbolBinario/ArbolBinario.java
+./arbolAVL/Nodo.java
+./arbolAVL/Logical.java
+./arbolAVL/BTreePrinter.java
+./arbolAVL/ArbolAVL.java
+./arbolAVL/Entero.java
+./arbolAVL/Comparable.java
 ./pila/Pila.java
 ./pila/Nodo.java
 ./miPrincipal/AppOperacionesABB.java
@@ -26,4 +32,5 @@
 ./miPrincipal/AppOrdenarEstudianteProm.java
 ./miPrincipal/AppOrdenarEstudianteNombre.java
 ./miPrincipal/AppRecorrido.java
+./miPrincipal/AppOperacionesArbolesAVL.java
 ./miPrincipal/AppEstudianteCriterioIdComparator.java

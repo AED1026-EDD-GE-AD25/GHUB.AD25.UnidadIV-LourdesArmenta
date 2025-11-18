@@ -35,6 +35,9 @@ public class Principal {
                     case 8:
                         AppOperacionesABB.inicio();
                         break;
+                    case 9:
+                        AppOperacionesArbolesAVL.inicio();
+                        break;
                     case 0:
                         System.out.println("Hasta Luego!");
                         break;
@@ -61,6 +64,7 @@ public class Principal {
         System.out.println("6. Ordenar Estudiantes por Promedio");
         System.out.println("7. Ordenar Estudiates por ID interce Comparator ");
         System.out.println("8. Operaciones con árboles binarios de búsqueda");
+        System.out.println("9. Operaciones con árboles binarios balanceados");
         System.out.println();
         System.out.println("0. Salir");
         System.out.print("Seleccione la opción deseada:");
