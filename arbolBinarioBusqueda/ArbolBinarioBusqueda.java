@@ -1,5 +1,6 @@
 package arbolBinarioBusqueda;
 
+import static org.junit.Assert.assertNull;
 
 public class ArbolBinarioBusqueda  {
     private Nodo raiz;
@@ -217,7 +218,41 @@ public class ArbolBinarioBusqueda  {
         //1. Si tiene menos de dos hijos (1 o 0 hijos), reajustar 
         //   los enlaces del antecesor
         if(aux.getIzquierdo()==null)
-           if (aux.getValor().esMenor(antecesor.getValor())
+           if (((Comparable) aux.getValor()).esMenor(antecesor.getValor()))
+               antecesor.setIzquierdo(aux.getDerecho());
+           else
+                antecesor.setDerecho(aux.getDerecho());
+        else if(aux.getDerecho()==null)
+            if(((Comparable) aux.getValor()).esMenor(antecesor.getValor()))
+                antecesor.setIzquierdo(aux.getIzquierdo());
+            else
+                antecesor.setDerecho(aux.getIzquierdo());
+        else
+           //El noso a eliminar tiene una rama izquierdad y derecha
+           reemplazarMayorIzquierdo(aux);
+        aux = null;
+        return true;
+    }
+    /*
+     * Reemplaza el nodo actual, por el mayor de la rama izquierda
+     */
+    private void reemplazarMayorIzquierdo(Nodo act){
+        Nodo mayor = act;
+        Nodo ant = act;
+        mayor = act.getIzquierdo();
+        //buscar el mayoe de la rama izquierda
+        //ant es el antecesor de mayor:
+        while(mayor.getDerecho() != null){
+            ant = mayor;
+            mayor = mayor.getDerecho();
+        }
+        act.setValor((Comparable) mayor.getValor()); //reemplaza
+        //reajuste
+        if (ant == act)
+            ant.setIzquierdo(mayor.getIzquierdo());
+        else
+            ant.setDerecho(mayor.getIzquierdo());
+           
 
     }
 

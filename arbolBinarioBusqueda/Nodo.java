@@ -22,6 +22,7 @@ public class Nodo {
     }
     public void setValor(Comparable valor) {
         this.valor = valor;
+
     }
     public Nodo getIzquierdo() {
         return izquierdo;

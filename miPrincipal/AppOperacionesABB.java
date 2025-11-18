@@ -20,6 +20,16 @@ public class AppOperacionesABB {
         }
         //Imprimir el arbol en forma de arbol
         BTreePrinter.printNode(arbol.getRaiz());
+        //Probar el borrado
+        arbol.eliminar(new Entero(4));
+         //Imprimir el arbol en forma de arbol
+        BTreePrinter.printNode(arbol.getRaiz());
+        arbol.eliminar(new Entero(10));
+        BTreePrinter.printNode(arbol.getRaiz());
+        arbol.eliminar(new Entero(8));
+        BTreePrinter.printNode(arbol.getRaiz());
+
+
 
 
     }
