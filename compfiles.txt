@@ -29,6 +29,7 @@
 ./miPrincipal/AppPersonaComparar.java
 ./miPrincipal/AppOrdenarEstudiantes.java
 ./miPrincipal/Principal.java
+./miPrincipal/AppTreeSet.java
 ./miPrincipal/AppOrdenarEstudianteProm.java
 ./miPrincipal/AppOrdenarEstudianteNombre.java
 ./miPrincipal/AppRecorrido.java
