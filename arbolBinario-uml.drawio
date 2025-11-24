@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram id="arbolBinario-uml" name="arbolBinario UML">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Clase ArbolBinario -->
+        <mxCell id="2" value="ArbolBinario" style="swimlane;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="220" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="- Nodo raiz&#10;+ ArbolBinario()&#10;+ Nodo getRaiz()&#10;+ void setRaiz(Nodo raiz)&#10;+ void preorden()&#10;+ void inorden()&#10;+ void postorden()&#10;+ void recorridoPorNiveles()&#10;+ void preordenIterativo()&#10;+ void inordenIterativo()&#10;+ void postordenIterativo()" style="text;html=1;" vertex="1" parent="2">
+          <mxGeometry x="0" y="40" width="220" height="220" as="geometry" />
+        </mxCell>
+        <!-- Clase Nodo -->
+        <mxCell id="4" value="Nodo" style="swimlane;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="40" width="220" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="- Object valor&#10;- Nodo izquierdo&#10;- Nodo derecho&#10;+ Nodo()&#10;+ Nodo(Object valor)&#10;+ Object getValor()&#10;+ void setValor(Object valor)&#10;+ Nodo getIzquierdo()&#10;+ void setIzquierdo(Nodo izquierdo)&#10;+ Nodo getDerecho()&#10;+ void setDerecho(Nodo derecho)" style="text;html=1;" vertex="1" parent="4">
+          <mxGeometry x="0" y="40" width="220" height="100" as="geometry" />
+        </mxCell>
+        <!-- Relaciones -->
+        <mxCell id="6" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;" edge="1" parent="1" source="2" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;" edge="1" parent="1" source="4" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
