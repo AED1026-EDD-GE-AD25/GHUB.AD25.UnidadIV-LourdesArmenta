@@ -46,7 +46,7 @@ make clean
 ```
 ## Comandos Git-Cambios y envío a Autograding
 
-### Por cada cambio importante que haga, actualice su historia usando los comandos:
+### Por cada cambio importante que haga, update su historia usando los comandos:
 ```
 git add .
 git commit -m "Descripción del cambio"
@@ -84,3 +84,47 @@ java -jar lib/junit-platform-console-standalone-1.5.2.jar -class-path build --se
 java -cp build miPrincipal.Principal
 ```
 Los comandos anteriores están considerados para un ambiente Linux. [Referencia.](https://www.baeldung.com/junit-run-from-command-line)
+
+## UML del paquete grafo
+Puedes visualizar este diagrama copiando el siguiente código en [PlantUML Online](https://www.plantuml.com/plantuml/):
+
+```plantuml
+@startuml
+package grafo {
+  class GrafoMatriz {
+    - int numVerts
+    - Vertice[] verts
+    - int[][] matAd
+    + GrafoMatriz()
+    + GrafoMatriz(int tot)
+    + void inicializarMatrizPesos()
+    + int[][] getMatriz()
+    + void nuevoVertice(String nom)
+    + int numVertice(String nom)
+    + String nombreVertice(int v)
+    + void nuevoArco(String a, String b)
+    + void nuevoArco(String a, String b, int peso)
+    + boolean adyacente(String a, String b)
+    + boolean adyacente(int a, int b)
+    + String imprimirMatriz()
+    + String imprimirVertices()
+    + int numeroDeVertices()
+    + void borrarArco(String a, String b)
+    + void borrarVertice(String nom)
+    + static int[] recorrerAnchura(GrafoMatriz g, String origen)
+    + static int[] recorrerProfundidad(GrafoMatriz g, String origen)
+    + static int[][] matrizCaminos(GrafoMatriz g)
+  }
+
+  class Vertice {
+    - String nombre
+    + Vertice(String nombre)
+    + String getNombre()
+    + void setNombre(String nombre)
+    + String toString()
+  }
+
+  GrafoMatriz "1" o-- "*" Vertice : contiene
+}
+@enduml
+```

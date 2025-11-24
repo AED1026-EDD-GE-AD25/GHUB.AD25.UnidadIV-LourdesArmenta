@@ -69,6 +69,7 @@ public class Principal {
         System.out.println("8. Operaciones con árboles binarios de búsqueda");
         System.out.println("9. Operaciones con árboles binarios balanceados");
         System.out.println("10. Operacion con clase TreeSet");
+        System.out.println("11. Representación de un Grafo");
        
         
         System.out.println();
