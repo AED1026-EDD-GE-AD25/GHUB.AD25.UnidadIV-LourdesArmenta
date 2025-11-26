@@ -30,6 +30,14 @@ public class AppOperacionesArbolesAVL {
             System.out.println("Impresion de arbol AVL");
             BTreePrinter.printNode(abo.getRaiz());
 
+            abo.eliminar(new Entero(9));
+            System.out.println("Impresion de arbol AVL");
+            BTreePrinter.printNode(abo.getRaiz());
+
+            abo.eliminar(new Entero(4));
+            System.out.println("Impresion de arbol AVL");
+            BTreePrinter.printNode(abo.getRaiz());
+
 
         }catch(Exception e){
             System.out.println("Error: "+e.getMessage());

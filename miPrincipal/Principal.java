@@ -41,6 +41,10 @@ public class Principal {
                     case 10:
                         AppTreeSet.inicio();
                         break;
+                    case 11:
+                        AppGrafo.inicio();
+                        break;
+     
                     case 0:
                         System.out.println("Hasta Luego!");
                         break;

@@ -1,3 +1,5 @@
+./grafo/GrafoMatriz.java
+./grafo/Vertice.java
 ./arbolBinarioBusqueda/CriterioEstNombre.java
 ./arbolBinarioBusqueda/CriterioId.java
 ./arbolBinarioBusqueda/Persona.java
@@ -33,5 +35,6 @@
 ./miPrincipal/AppOrdenarEstudianteProm.java
 ./miPrincipal/AppOrdenarEstudianteNombre.java
 ./miPrincipal/AppRecorrido.java
+./miPrincipal/AppGrafo.java
 ./miPrincipal/AppOperacionesArbolesAVL.java
 ./miPrincipal/AppEstudianteCriterioIdComparator.java
